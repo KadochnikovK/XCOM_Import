@@ -1,0 +1,50 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+    // padding: var(--size-sm);
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--size-md);
+        row-gap: var(--size-sm)
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 2;
+        position: relative;
+
+        @media(min-width: $sm) {
+            grid-column: span 1;
+        }
+
+        &:last-child:nth-child(odd) {
+            grid-column: span 2;
+        }
+    }
+
+    &__input {
+        padding: var(--size-sm);
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid var(--color-white);
+        border-radius: var(--radius-sm);
+    }
+
+    &__label {
+        font-size: var(--size-xs);
+        margin-bottom: var(--size-xs);
+    }
+
+}
+
+.error-message {
+    position: absolute;
+    top: 92%;
+    color: #ff0000;
+    font-size: var(--size-sm);
+    margin-top: 5px;
+}

@@ -1,0 +1,58 @@
+// брейкпоинты
+$xl: 1300px;
+$md: 920px;
+$regular: 768px;
+$sm: 640px;
+$xs: 320px;
+
+:root {
+
+    --color-blue-main: #195EE7;
+    --color-blue-second: #06182E;
+    --color-orange: #f27028;
+    --color-orange-second: #f59324;
+    --color-regular: #343434;
+    --color-grey: #9D9D9D;
+    --color-grey-light: #efefef;
+    --color-white: #fff;
+    --color-black: #000000;
+
+    --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);;
+    --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
+    --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
+    
+
+
+
+
+
+
+    --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
+
+    --size-xxxxs: calc(var(--size-base) * 0.2);
+    --size-xxxs: calc(var(--size-base) * 0.4);
+    --size-xxs: calc(var(--size-base) * 0.6);
+    --size-xs: calc(var(--size-base) * 0.8);
+    --size-sm: calc(var(--size-base) * 1);
+    --size-md: calc(var(--size-base) * 1.2);
+    --size-lg: calc(var(--size-base) * 1.5);
+    --size-xl: calc(var(--size-base) * 2);
+    --size-xxl: calc(var(--size-base) * 2.5);
+    --size-xxxl: calc(var(--size-base) * 5);
+
+    --radius-lg: 24px;
+    --radius-sm: 10px;
+
+    --lh-xl: 1.6;
+    --lh-lg: 1.4;
+    --lh-md: 1.2;
+
+
+    --max-size: 1440px;
+
+
+    --border-h-lg: 4px;
+    --border-h-md: 2px;
+
+
+}

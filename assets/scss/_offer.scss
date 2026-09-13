@@ -1,0 +1,37 @@
+.offer {
+    height: 100vh;
+    // background: var(--gradient-main);
+    background: url(./images/bg-main.png);
+    background-size: cover;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 800;
+
+    * {
+        font-weight: 600;
+    }
+
+
+    &__content {
+        color: var(--color-white);
+        gap: var(--size-md);
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+
+        &.active {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    
+    &__headline  {
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: var(--size-xs);
+    }
+
+}
