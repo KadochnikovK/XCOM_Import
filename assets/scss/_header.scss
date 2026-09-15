@@ -178,13 +178,13 @@
         // }
     }
 
-    @media (min-width: 767px) {
+    @media (min-width: $regular) {
         &__button {
             font-size: var(--size-xs) !important;
         }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: $md) {
         &__content {
             flex-direction: row;
             background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 48.77%, rgba(0, 0, 0, 0) 100%);

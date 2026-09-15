@@ -8,12 +8,28 @@
         display: grid;
         gap: var(--size-md);
         color: var(--color-white);
-        grid-template-columns: 0.7fr 2fr;
+        grid-template-columns: 1fr;
+        @include xl {
+            grid-template-columns: 0.7fr 2fr;
+        }
         grid-auto-rows: max-content;
+
+        &--slider {
+            grid-template-columns: 1fr;
+            @include xl {
+                grid-template-columns: 0.7fr 2fr;
+            }
+        }
     }
 
     &__item {
-        grid-column: span 2;
+        max-width: calc(100vw - var(--size-xs) * 4);
+        &--slider {
+            @include xl {
+                grid-column: span 2;
+                max-width: 80vw;
+            }
+        }
     }
 
     @media (min-width: $sm) {

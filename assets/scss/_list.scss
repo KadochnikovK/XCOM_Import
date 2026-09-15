@@ -3,10 +3,12 @@
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: var(--size-md);
         flex-direction: column;
-
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+        }
         &--row {
             flex-direction: row !important;
         }
@@ -54,6 +56,7 @@
     &__items {
         display: flex;
         flex-direction: column;
+        gap: var(--size-md);
 
         &--column {
             flex-direction: column !important;
@@ -66,7 +69,11 @@
         }
 
         &--background {
-            background: var(--gradient-main);
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid #195ee7;
+            border-radius: 10px;
+
+            // background: var(--gradient-main);
 
             * {
                 color: var(--color-white);
@@ -191,6 +198,8 @@
         }
 
         &--left {
+            align-items: center;
+            text-align: center;
             @include sm {
                 align-items: left;
                 text-align: left;
@@ -198,6 +207,8 @@
         }
 
         &--center {
+            align-items: center;
+            text-align: center;
             @include sm {
                 align-items: center;
                 text-align: center;
@@ -205,6 +216,8 @@
         }
 
         &--right {
+            align-items: center;
+            text-align: center;
             @include sm {
                 align-items: right;
                 text-align: right;

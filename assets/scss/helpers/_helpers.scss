@@ -62,7 +62,7 @@
 .mobile-only {
     display: block;
 
-    @media (min-width: $sm) {
+    @media (min-width: $md) {
 
         display: none;
 
@@ -70,9 +70,9 @@
 }
 
 .desktop-only {
-    display: none !important;
+    display: none;
 
-    @media (min-width: $sm) {
+    @media (min-width: $md) {
 
         display: block;
 

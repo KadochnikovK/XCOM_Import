@@ -29,11 +29,13 @@
             <a href="#terms" class="header__link">Условия</a>
             <a href="#program" class="header__link">Программа</a>
             <a href="#speakers" class="header__link">Спикеры</a>
-            <a href="#contacts" class="header__link">Регистрация</a>
+            <a href="#main-form" class="header__link">Регистрация</a>
           </nav>
-          <a href="#registration" class="header__button button">
-            <div class="button__text">Принять участие</div>
-          </a>
+          <div class="desktop-only">
+            <a href="#registration" class="header__button button">
+              <div class="button__text">Принять участие</div>
+            </a>
+          </div>
         </div>
 
         <div class="header__item">
@@ -151,10 +153,11 @@
             <div class="list__header">
               <div class="headgroup">
                 <div class="headgroup__headline">Программа и тезисы</div>
-
-                <a href="#registration" class="button">
-                  <div class="button__text">Принять участие</div>
-                </a>
+                <div class="desktop-only">
+                  <a href="#registration" class="button">
+                    <div class="button__text">Принять участие</div>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="list__items">
@@ -192,13 +195,18 @@
               </div>
             </div>
           </div>
+          <div class="mobile-only">
+            <a href="#registration" class="button">
+              <div class="button__text">Принять участие</div>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="partners container container--background">
         <div class="partners__content content swiper partners-swiper">
           <!-- <div class="group group--column padding-bottom-md"> -->
-          <h2 class="headline">Партнеры мероприятия</h2>
+          <h2 class="headline">Партнеры</h2>
           <!-- </div> -->
 
           <div class="partners__items swiper-wrapper">
@@ -272,11 +280,7 @@
 
       <section class="container partners" style="flex-direction: column">
         <div class="partners__content content swiper speakers-swiper padding-bottom-xl margin-bottom-xl">
-          <div class="group group--column padding-bottom-md">
-            <div class="headgroup margin-right-auto">
-              <!-- <div class="headgroup__label">Спикеры</div> -->
-            </div>
-          </div>
+          <h2 class="headline">Спикеры</h2>
 
           <div class="partners__items swiper-wrapper">
             <div class="swiper-slide partners__card">
@@ -299,12 +303,13 @@
             </div>
           </div>
           <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="partners container container--background">
         <div class="partners__content content swiper infopartners-swiper">
           <!-- <div class="group group--column padding-bottom-md"> -->
-          <h2 class="headline">Партнеры мероприятия</h2>
+          <h2 class="headline">Инфопартнеры</h2>
           <!-- </div> -->
 
           <div class="partners__items swiper-wrapper">
@@ -422,7 +427,7 @@
             </div>
           </div>
           <div class="list__content">
-            <div id="map" class="map padding-bottom-sm"></div>
+            <div id="map" class="map" style="border-radius: 10px; overflow: hidden"></div>
 
             <script src="https://api-maps.yandex.ru/2.1/?apikey={здесь нужен токен}
                         &lang=ru_RU"></script>
@@ -450,16 +455,41 @@
                 myMap.behaviors.disable("scrollZoom");
               }
             </script>
-
-            <div class="list__items">
-              <div class="list__item list__item--sm list__item--start padding-bottom-md" style="flex-grow: 0; flex-basis: auto; width: 65%">
-                <div class="text text--start hyphenate">
-                  <div class="gradient-text hyphenate">Дата</div>
-                  16 апреля 2026 года, 16:00
+            <div class="mobile-only" style="height: 100%; transform: translateY(-40px); z-index: -1">
+              <div class="list__items list__items--column list__items--background" style="display: flex; height: 100%; width: 100%; padding-top: 40px">
+                <div class="list__item list__item--sm list__item--start" style="flex-grow: 0; flex-basis: auto; min-height: auto">
+                  <div class="text text--start hyphenate">
+                    <div class="gradient-text hyphenate">Дата</div>
+                    16 апреля 2026 года, 16:00
+                  </div>
                 </div>
-                <div class="text text--start hyphenate">
-                  <div class="gradient-text hyphenate">Адрес</div>
-                  Беговая ул., стр 34, г.Москва
+                <div class="list__item list__item--sm list__item--start" style="flex-grow: 0; flex-basis: auto; min-height: auto">
+                  <div class="text text--start hyphenate">
+                    <div class="gradient-text hyphenate">Адрес</div>
+                    Беговая ул., стр 34, г.Москва
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-only" style="height: 100%">
+              <div class="list__items list__items--column list__items--background" style="display: flex; height: 100%; width: 100%">
+                <div class="list__item list__item--sm list__item--start" style="flex-grow: 0; flex-basis: auto; min-height: auto; margin-top: auto">
+                  <div class="text text--start hyphenate">
+                    <div class="gradient-text hyphenate">Дата</div>
+                    16 апреля 2026 года
+                  </div>
+                </div>
+                <div class="list__item list__item--sm list__item--start" style="flex-grow: 0; flex-basis: auto; min-height: auto">
+                  <div class="text text--start hyphenate">
+                    <div class="gradient-text hyphenate">Время</div>
+                    16:00
+                  </div>
+                </div>
+                <div class="list__item list__item--sm list__item--start" style="flex-grow: 0; flex-basis: auto; min-height: auto; margin-bottom: auto">
+                  <div class="text text--start hyphenate">
+                    <div class="gradient-text hyphenate">Адрес</div>
+                    Беговая ул., стр 34, г.Москва
+                  </div>
                 </div>
               </div>
             </div>
@@ -468,12 +498,8 @@
       </section>
 
       <section class="container container--background partners" style="flex-direction: column">
-        <div class="partners__content content swiper speakers-swiper">
-          <div class="group group--column padding-bottom-md">
-            <div class="headgroup margin-right-auto">
-              <!-- <div class="headgroup__label">Как это было?</div> -->
-            </div>
-          </div>
+        <div class="partners__content content swiper photos-swiper">
+          <h2 class="headline">Как это было</h2>
 
           <div class="partners__items swiper-wrapper">
             <div class="swiper-slide partners__card">
@@ -487,142 +513,46 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
-
-      <!-- <section class="more container" style="padding-top: 0">
-            <div class="more__content content">
-                <div class="list__header ">
-                    <div class="headgroup">
-                        <div class="headgroup__label">Об X-com</div> 
-                    </div>
-                </div>
-                <div class="more__areas">
-                    <div class="more__grid more__grid--a after-lg">
-                        <div class="more__item more__item--half more__item--bright ">
-                            <div class="more__item-text more__item-text--big ">О ГК X-Com</div>
-                            <div class="more__item-text">ГК X-Com – это многопрофильный системный интегратор,
-                                мультиканальный поставщик ИТ-оборудования
-                                и сервисов, производитель техники под собственной торговой маркой
-                            </div>
-                        </div>
-                        <div class="more__item more__item--half more__item--center">
-                            <img src="assets/images/logo.svg" style="max-width: 50%; height: 100%;" alt="">
-                        </div>
-
-                    </div>
-                    <div class="more__grid more__grid--b after-lg">
-                        <div class="more__item more__item--full more__item--center">
-                            <div class="more__item-text more__item-text--big">О нас также:</div>
-
-                        </div>
-                        <div class="more__item">
-
-                            <div class="more__item-text">В структурах
-                                ГК X-Com 
-                                трудится более 700 сотрудников, а в партнерский портфель входит более 150 000 SKU от 500
-                                российских
-                                и зарубежных вендоров</div>
-                        </div>
-                        <div class="more__item more__item--bright">
-
-                            <div class="more__item-text more__item-text--color">Входим в топ-50 ИТ-компаний по версии
-                                агентства RAEX
-                                Более 10 лет входим в топ-100 крупнейших ИТ-компаний в рейтингах Cnews - 100 и Сnews 300
-                                - рейтинги самого авторитетного издания об ИТ</div>
-
-                        </div>
-                        <div class="more__item">
-                            <div class="more__item-text more__item-text--color">Более 5 лет входим в авторитетный
-                                отраслевой рейтинг Tadviser-100
-                                Входим в топ-25 системных интеграторов России в рейтинге издания "Новости ИТ-канала"
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="more__areas">
-                    <div class="more__grid more__grid--a after-lg">
-                        <div class=" more__item--half ">
-
-                        </div>
-
-
-                    </div>
-                    <div class="more__grid more__grid--b after-lg">
-                        <div class="more__item--full more__item--center">
-                            <img src="assets/images/logos.png" alt="" style="margin-left: auto">
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <div class="more__swiper more__swiper swiper before-lg" style="flex-direction: column;">
-                    <div class="group group--column padding-bottom-md">
-
-                        <div class="group">
-                            <a class="button button--icon  button--next">
-                                <div class="button__icon">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </div>
-
-                            </a>
-                            <a class="button button--icon  button--next">
-                                <div class="button__icon">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide more__item more__item--half more__item--bright ">
-                            <div class="more__item-text more__item-text--big ">О ГК X-Com</div>
-                            <div class="more__item-text">ГК X-Com – это многопрофильный системный интегратор,
-                                мультиканальный поставщик ИТ-оборудования
-                                и сервисов, производитель техники под собственной торговой маркой
-                            </div>
-                        </div>
-                        <div class="swiper-slide more__item more__item--half more__item--center">
-                            <img src="assets/images/logo.svg" style="max-width: 50%; height: 100%;" alt="">
-                        </div>
-                        <div class="swiper-slide more__item">
-
-                            <div class="more__item-text">В структурах
-                                ГК X-Com 
-                                трудится более 700 сотрудников, а в партнерский портфель входит более 150 000 SKU от 500
-                                российских
-                                и зарубежных вендоров</div>
-                        </div>
-                        <div class="swiper-slide more__item more__item--bright">
-
-                            <div class="more__item-text more__item-text--color">Входим в топ-50 ИТ-компаний по версии
-                                агентства RAEX
-                                Более 10 лет входим в топ-100 крупнейших ИТ-компаний в рейтингах Cnews - 100 и Сnews 300
-                                - рейтинги самого авторитетного издания об ИТ</div>
-
-                        </div>
-                        <div class="swiper-slide more__item">
-                            <div class="more__item-text more__item-text--color">Более 5 лет входим в авторитетный
-                                отраслевой рейтинг Tadviser-100
-                                Входим в топ-25 системных интеграторов России в рейтинге издания "Новости ИТ-канала"
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <img class="before-lg" src="assets/images/logos.png" alt="">
-
-            </div>
-        </section> -->
     </main>
     <footer class="footer container">
-      <div class="footer__content padding-bottom-xl padding-top-xl content">здесь будет дополнительная инфа</div>
+      <div class="content footer__content footer__content--slider padding-bottom-xl padding-top-xl content">
+        <div class="footer__item" style="display: flex; flex-direction: column; gap: var(--size-md)">
+          <div style="font-size: var(--size-sm); font-weight: 600">О компании</div>
+
+          <div style="font-size: var(--size-xs)">
+            X-Com ГК X-Com – это многопрофильный системный интегратор, мультиканальный поставщик ИТ-оборудования и сервисов, производитель техники под собственной торговой маркой
+          </div>
+        </div>
+        <div class="footer__item footer__item--slider">
+          <div style="display: block; height: 100%">
+            <div class="swiper topics__slider footer__slider" style="display: block; height: 100%">
+              <div class="swiper-wrapper" style="align-items: stretch">
+                <div class="swiper-slide topics__slide" style="align-items: center; text-align: center; height: auto">
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">Более</p>
+                  <p class="topics__text" style="font-size: var(--size-xxl); font-weight: 600; margin: auto">700</p>
+
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">сотрудников</p>
+                </div>
+                <div class="swiper-slide topics__slide" style="align-items: center; text-align: center; height: auto">
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">ТОП</p>
+                  <p class="topics__text" style="font-size: var(--size-xxl); font-weight: 600; margin: auto">100</p>
+
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">крупнейших ИТ-компаний</p>
+                </div>
+                <div class="swiper-slide topics__slide" style="align-items: center; text-align: center; height: auto">
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">Более</p>
+                  <p class="topics__text" style="font-size: var(--size-xxl); font-weight: 600; margin: auto">5</p>
+
+                  <p class="topics__text" style="font-size: var(--size-sm); font-weight: 400; margin: auto">лет входим в отраслевой рейтинг</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="footer__content padding-bottom-xl padding-top-xl content">
         <div class="footer__item">
           <a href="https://www.xcom.ru/" class="logo">
