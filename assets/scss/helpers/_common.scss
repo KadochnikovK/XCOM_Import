@@ -17,7 +17,7 @@ body {
     width: 100%;
     max-width: 100vw;
     background: var(--gradient-main);
-    
+
     // overflow-x: hidden;
     // position: relative;
     // min-height: 100vh;
@@ -88,20 +88,19 @@ a {
         transform: rotate(45deg);
     }
 
-    @media(min-width: $sm) {
+    @media (min-width: $sm) {
         right: 0;
         left: calc(100% - 64px);
     }
-
 }
 
 @keyframes gradientAnimation {
     0% {
-        border-color: #0B1957;
+        border-color: #0b1957;
     }
 
     100% {
-        border-color: #5784E6;
+        border-color: #5784e6;
     }
 }
 
@@ -119,7 +118,6 @@ a {
     width: 100%;
 }
 
-
 .map {
     width: 100%;
     height: 528px;
@@ -130,7 +128,6 @@ a {
     @media (min-width: $sm) {
         width: 100%;
     }
-
 }
 
 .link {
@@ -155,4 +152,28 @@ a {
             display: grid !important;
         }
     }
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    background: #999;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.swiper-pagination-bullet-active {
+    width: 11px;
+    height: 11px;
+    background: #fff;
 }

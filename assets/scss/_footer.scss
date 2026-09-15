@@ -1,13 +1,14 @@
 @import "./root";
 .footer {
-
+    flex-direction: column;
+    align-items: center;
     background: var(--gradient-main);
 
     &__content {
         display: grid;
         gap: var(--size-md);
         color: var(--color-white);
-        grid-template-columns: .7fr 2fr;
+        grid-template-columns: 0.7fr 2fr;
         grid-auto-rows: max-content;
     }
 

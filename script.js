@@ -75,115 +75,79 @@ const topicsSwiper = new Swiper(".topics__slider", {
 });
 
 const partners = new Swiper(".partners-swiper", {
+    slidesPerView: 1,
     spaceBetween: 20,
+
     breakpoints: {
-
-        320: {
-            slidesPerView: 1,
-
-        },
-
         640: {
             slidesPerView: 2,
-
         },
+
         920: {
             slidesPerView: 3,
-
         },
 
         1300: {
             slidesPerView: 4,
-
         },
 
         1600: {
             slidesPerView: 5,
-
-        },
-
-        1800: {
-            slidesPerView: 6,
-
         },
     },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //     hide: true,
-    // },
-    freeMode: {
-        enabled: true,
-        sticky: false,
-    },
-    loop: true,
+
+    loop: false,
+
     autoplay: {
         delay: 10000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
-    navigation: {
-        nextEl: '.partners-swiper .button--next',
-        prevEl: '.partners-swiper .button--prev',
+
+    pagination: {
+        el: ".partners-swiper .swiper-pagination",
+        clickable: true,
     },
+
+    grabCursor: true,
 });
 
 const infopartners = new Swiper(".infopartners-swiper", {
+    slidesPerView: 1,
     spaceBetween: 20,
+
     breakpoints: {
-
-        320: {
-            slidesPerView: 1,
-
-        },
-
         640: {
             slidesPerView: 2,
-
         },
+
         920: {
             slidesPerView: 3,
-
         },
 
         1300: {
             slidesPerView: 4,
-
         },
 
         1600: {
             slidesPerView: 5,
-
-        },
-
-        1800: {
-            slidesPerView: 6,
-
         },
     },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //     hide: true,
-    // },
-    freeMode: {
-        enabled: true,
-        sticky: false,
-    },
-    loop: true,
+
+    loop: false,
+
     autoplay: {
         delay: 10000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
-    navigation: {
-        nextEl: '.infopartners-swiper .button--next',
-        prevEl: '.infopartners-swiper .button--prev',
+
+    pagination: {
+        el: ".infopartners-swiper .swiper-pagination",
+        clickable: true,
     },
+
+    grabCursor: true,
 });
 
 const speakers = new Swiper(".speakers-swiper", {
