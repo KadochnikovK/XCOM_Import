@@ -5,7 +5,12 @@
     font-size: var(--size-xs);
 
     &__item {
-        padding:  0 var(--size-xs);
+        padding: 0 var(--size-xs);
+        display: flex;
+        gap: var(--size-xs);
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        font-size: var(--size-lg);
 
         &:nth-child(1) {
             padding-left: 0;
@@ -13,6 +18,10 @@
 
         &:not(:last-child) {
             border-right: 1px solid var(--color-white);
+        }
+
+        img {
+            width: 40px;
         }
     }
 

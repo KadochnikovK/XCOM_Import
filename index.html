@@ -36,7 +36,7 @@
                 </nav>
                 <a href="#registration" class="header__button button">
 
-                    <span class="button__text">Принять участие</span>
+                    <div class="button__text">Принять участие</div>
                 </a>
             </div>
 
@@ -58,70 +58,91 @@
                         style="color: var(--color-blue-main)">2026</div>
                 </h1>
 
-                <p class="offer__text">Ключевая площадка для диалога бизнеса, IT-индустрии
-                    о будущем импортозамещаемых технологий</p>
+
                 <div class="date">
                     <p class="date__item">
-                        12 ноября 2026
+                        <img src="assets/images/icon-calendar.svg" alt="">12 ноября 2026
                     </p>
 
 
                     <p class="date__item">
-                        14:00
+                        <img src="assets/images/icon-time.svg" alt=""> 14:00
                     </p>
                 </div>
+                <p class="offer__text">Ключевая площадка для диалога бизнеса, IT-индустрии
+                    о будущем импортозамещаемых технологий</p>
                 <a href="#registration" class="button">
 
-                    <span class="button__text">Принять участие</span>
+                    <div class="button__text">Принять участие</div>
                 </a>
 
             </div>
-            <canvas class="backgroundCanvas" id="backgroundCanvas"></canvas>
+
         </section>
         <section class="container description">
             <div class="content description__content">
+                <h2 class="headline">Для кого мероприятие</h2>
                 <p class="description__text">
-                    Конференция предназначена для руководителей
-                    и специалистов промышленных предприятий, ответственных за цифровизацию, ИТ-инфраструктуру,
-                    энергоснабжение, кибербезопасность и системы безопасности
+                    <b>«Импортозамещение 2026»</b> — конференция о современных российских ИТ-решениях, технологиях и
+                    практических инструментах для бизнеса и государственного сектора.
                 </p>
-                <!-- <div class="double-arrow"></div> -->
+                <p class="description__text">
+                    В центре программы — <b>реальные кейсы
+                        импортозамещения</b>, развитие отечественной ИТ-инфраструктуры, информационная безопасность и
+                    новые
+                    возможности российского рынка. Эксперты отрасли поделятся опытом, обсудят <b>актуальные тенденции и
+                        решения</b>, которые уже сегодня помогают компаниям снижать зависимость от зарубежных технологий
+                    и
+                    выстраивать устойчивую ИТ-среду.
+                </p>
+
             </div>
 
         </section>
-        <section class="container schedule">
-            <div class="content schedule__content">
-                <div class="schedule__head">
-                    <h2 class="headline schedule__headline">Ключевые темы:</h2>
+        <section class="container topics">
+            <div class="content topics__content">
+                <div class="topics__head">
+                    <h2 class="headline topics__headline">Ключевые темы:</h2>
 
                 </div>
 
-                <div class="swiper schedule__slider">
+                <div class="swiper topics__slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide schedule__slide">
-                            <p class="schedule__name">Образование</p>
-                            <img src="assets/images/icon_01.svg" alt="icon" class="schedule__image" />
+                        <div class="swiper-slide topics__slide">
 
+                            <img src="assets/images/icon-topics-01.svg" alt="icon" class="topics__image" />
+                            <p class="topics__name">Стратегии импортозамещения — </p>
+                            <p class="topics__text">эффективный переход
+                                на российские решения</p>
                         </div>
-                        <div class="swiper-slide schedule__slide">
-                            <p class="schedule__name">Безопасность</p>
-                            <img src="assets/images/icon_02.svg" alt="icon" class="schedule__image" />
+                        <div class="swiper-slide topics__slide">
 
+                            <img src="assets/images/icon-topics-02.svg" alt="icon" class="topics__image" />
+                            <p class="topics__name">Отечественное ПО
+                                и оборудование —</p>
+                            <p class="topics__text">возможности российского ИТ-рынка</p>
                         </div>
-                        <div class="swiper-slide schedule__slide">
-                            <p class="schedule__name">Промышленность</p>
-                            <img src="assets/images/icon_03.svg" alt="icon" class="schedule__image" />
+                        <div class="swiper-slide topics__slide">
 
+                            <img src="assets/images/icon-topics-03.svg" alt="icon" class="topics__image" />
+                            <p class="topics__name">Информационная безопасность — </p>
+                            <p class="topics__text">защита данных
+                                и инфраструктуры</p>
                         </div>
-                        <div class="swiper-slide schedule__slide">
-                            <p class="schedule__name">DEEPTECH</p>
-                            <img src="assets/images/icon_04.svg" alt="icon" class="schedule__image" />
+                        <div class="swiper-slide topics__slide">
 
+                            <img src="assets/images/icon-topics-04.svg" alt="icon" class="topics__image" />
+                            <p class="topics__name">Практические кейсы внедрения —</p>
+                            <p class="topics__text">реальный опыт
+                                компаний</p>
                         </div>
-                        <div class="swiper-slide schedule__slide">
-                            <p class="schedule__name">ИИ</p>
-                            <img src="assets/images/icon_05.svg" alt="icon" class="schedule__image" />
+                        <div class="swiper-slide topics__slide">
 
+                            <img src="assets/images/icon-topics-05.svg" alt="icon" class="topics__image" />
+                            <p class="topics__name">Государственная поддержка —
+                            </p>
+                            <p class="topics__text">программы, требования
+                                и перспективы </p>
                         </div>
                     </div>
 
@@ -136,22 +157,28 @@
 
                     <div class="list__items">
                         <div class="list__item list__item--small list__item--column" style="border: none; padding: 0;">
-                            <span class="color color--grey">(01)</span>
+                            <div class="list__number">1</div>
                             Заполнить форму регистрации
                         </div>
-                        <div class="list__item list__item--small list__item--column" style="border: none; padding: 0;">
-                            <span class="color color--grey">(02)</span>
-                            Получить подтверждение
+                        <div class="list__item list__item--arrow" style="border: none; padding: 0;">
+
                         </div>
                         <div class="list__item list__item--small list__item--column" style="border: none; padding: 0;">
-                            <span class="color color--grey">(03)</span>
+                            <div class="list__number">2</div>
+                            Получить подтверждение
+                        </div>
+                        <div class="list__item list__item--arrow" style="border: none; padding: 0;">
+
+                        </div>
+                        <div class="list__item list__item--small list__item--column" style="border: none; padding: 0;">
+                            <div class="list__number">3</div>
                             Примите участие в конференции
                         </div>
                     </div>
                 </div>
-                <a href="#registration" class="header__button button">
+                <a href="#registration" class="header__button button" style="margin-inline: auto">
 
-                    <span class="button__text">Принять участие</span>
+                    <div class="button__text">Принять участие</div>
                 </a>
             </div>
         </section>
@@ -171,7 +198,7 @@
 
                             <a href="#registration" class="button ">
 
-                                <span class="button__text">Принять участие</span>
+                                <div class="button__text">Принять участие</div>
                             </a>
 
 
@@ -179,38 +206,38 @@
                     </div>
                     <div class="list__items ">
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             AR/VR на производстве: 
                             Инструкции, удаленная
                             экспертиза, цифровые тренажеры
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Энергоэффективность и надежное электроснабжение
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             СКС промышленного класса: 
                             Отличия, стандарты и выбор компонентов
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Сетевое и серверное оборудование для промышленных задач
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Кибербезопасность промышленных систем (IIoT)
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Защита критической инфраструктуры
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Системы оповещения и управления эвакуацией (СОУЭ)
                         </div>
                         <div class="list__item list__item--sm list__item--column line-bottom">
-                            <span class="">[14:00-15:00]</span>
+                            <div class="">[14:00-15:00]</div>
                             Промышленные системы видеонаблюдения и аналитики
                         </div>
 
@@ -283,7 +310,7 @@
             <div class="content">
                 <a href="#registration" class="button  margin-top-md">
 
-                    <span class="button__text">Принять участие</span>
+                    <div class="button__text">Принять участие</div>
                 </a>
 
             </div>
@@ -426,11 +453,16 @@
                             <input type="number" class="form__input" placeholder=" " name="taxId" />
                         </div>
                     </div>
-                    <p class="text-sm">Передавая свои данные, вы даете согласие на <a href="#"
-                            class="gradient-text">обработку персональных данных</a></p>
+                    <div class="form__item form__item--checkbox">
+                        <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox"
+                            required />
+                        <label for="privacy-policy" class="form__checkbox-label">Я согласен на обработку <a href="#"
+                                style="font-weight: 700">персональных данных</a></label>
+                        <div class="error-message" style="display: none"></div>
+                    </div>
                     <button type="submit" class="button " style="max-width: 500px; width: 100%;">
 
-                        <span class="button__text">Принять участие</span>
+                        <div class="button__text">Принять участие</div>
                     </button>
 
                 </form>
@@ -477,11 +509,11 @@
                         <div class="list__item list__item--sm list__item--start padding-bottom-md"
                             style="flex-grow: 0; flex-basis: auto; width: 65%;">
                             <div class="text text--start hyphenate">
-                                <span class="gradient-text hyphenate">Дата</span>
+                                <div class="gradient-text hyphenate">Дата</div>
                                 16 апреля 2026 года, 16:00
                             </div>
                             <div class="text text--start hyphenate">
-                                <span class="gradient-text hyphenate">Адрес</span>
+                                <div class="gradient-text hyphenate">Адрес</div>
                                 Беговая ул., стр 34, г.Москва
                             </div>
                         </div>
@@ -668,12 +700,12 @@
             <div class="footer__item">
                 <div class="group group--mobile">
                     <div class="text text--start text--full ">
-                        <span class="text-base text-base--normal">Контакты</span>
+                        <div class="text-base text-base--normal">Контакты</div>
                         <a href="tel:+74952236339">+7 (495) 223-63-39 (Москва)</a>
                         <a href="tel:+78127401120">+7 (812) 740-11-20 (Санкт-Петербург)</a>
                     </div>
                     <div class="text text--start text--full">
-                        <span class="text-base text-base--normal">Обратная связь</span>
+                        <div class="text-base text-base--normal">Обратная связь</div>
                         <a href="tel:+74952236339">+7 (495) 223-63-39 (Москва)</a>
                         <a href="tel:+78127401120">+7 (812) 740-11-20 (Санкт-Петербург)</a>
                         <div class="group">

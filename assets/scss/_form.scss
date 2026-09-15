@@ -25,6 +25,55 @@
         &:last-child:nth-child(odd) {
             grid-column: span 2;
         }
+
+        &--checkbox {
+            display: flex;
+            margin-top: var(--size-md);
+            position: relative;
+            padding-left: 30px;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            font-size: var(--size-xxs);
+            font-weight: 500;
+        }
+
+        &+label:before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--color-white);
+            border-radius: 10pc;
+        }
+
+        &:checked+label:after {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: var(--color-white);
+            border-radius: 10pc;
+        }
+
+        &:focus+label:before {
+            box-shadow: 0 0 0 2px var(--color-regular);
+        }
     }
 
     &__input {

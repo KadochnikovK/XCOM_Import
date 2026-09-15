@@ -5,11 +5,11 @@
     }
 
     &__text {
-        font-size: var(--size-md);
+        font-size: var(--size-xs);
       
 
         @media(min-width: $sm) {
-            font-size: var(--size-md);
+            font-size: var(--size-xs);
         }
     }
 

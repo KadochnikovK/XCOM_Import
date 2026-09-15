@@ -1,4 +1,4 @@
-const scheduleSwiper = new Swiper(".schedule__slider", {
+const topicsSwiper = new Swiper(".topics__slider", {
     slidesPerView: "auto",
     spaceBetween: 20,
     centeredSlides: false,
@@ -274,10 +274,10 @@ const moreSwiper2 = new Swiper(".more__swiper", {
 
     on: {
         init: function () {
-            console.log("Schedule slider initialized");
+            console.log("topics slider initialized");
         },
         slideChange: function () {
-            console.log("Schedule slider changed to slide:", this.realIndex);
+            console.log("topics slider changed to slide:", this.realIndex);
         }
     }
 });
@@ -287,110 +287,18 @@ if (moreSlider2Element) {
     moreSlider2Element.addEventListener('mouseenter', function () {
         if (moreSwiper2.autoplay && moreSwiper2.autoplay.running) {
             moreSwiper2.autoplay.stop();
-            console.log("Schedule slider autoplay stopped");
+            console.log("topics slider autoplay stopped");
         }
     });
 
     moreSlider2Element.addEventListener('mouseleave', function () {
         if (moreSwiper2.autoplay && !moreSwiper2.autoplay.running) {
             moreSwiper2.autoplay.start();
-            console.log("Schedule slider autoplay started");
+            console.log("topics slider autoplay started");
         }
     });
 }
 
-// const canvas = document.getElementById('backgroundCanvas');
-// const ctx = canvas.getContext('2d');
-
-// let mouseX = -1000, mouseY = -1000;
-// let glowStrength = 0;
-
-// function resizeCanvas() {
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-// }
-
-// resizeCanvas();
-// window.addEventListener('resize', resizeCanvas);
-
-// document.addEventListener('mousemove', e => {
-//     mouseX = e.clientX;
-//     mouseY = e.clientY;
-//     glowStrength = 1;
-// });
-
-// function lerp(a, b, t) {
-//     return a + (b - a) * t;
-// }
-
-// function draw() {
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     const gridSize = 70;
-//     const radius = 350;
-//     const radiusSq = radius * radius;
-
-
-//     glowStrength = lerp(glowStrength, 0, 0.02);
-
-
-//     ctx.strokeStyle = 'rgba(200, 200, 200, 0.1)';
-//     ctx.shadowBlur = 0;
-//     for (let x = 0; x <= canvas.width; x += gridSize) {
-//         ctx.beginPath();
-//         ctx.moveTo(x, 0);
-//         ctx.lineTo(x, canvas.height);
-//         ctx.stroke();
-//     }
-//     for (let y = 0; y <= canvas.height; y += gridSize) {
-//         ctx.beginPath();
-//         ctx.moveTo(0, y);
-//         ctx.lineTo(canvas.width, y);
-//         ctx.stroke();
-//     }
-
-
-//     for (let x = 0; x <= canvas.width; x += gridSize) {
-//         for (let y = 0; y <= canvas.height; y += gridSize) {
-//             const dx = x - mouseX;
-//             const dy = y - mouseY;
-//             const distSq = dx * dx + dy * dy;
-
-//             if (distSq <= radiusSq) {
-//                 const dist = Math.sqrt(distSq);
-//                 let t = 1 - dist / radius;
-//                 t = Math.pow(t, 2); 
-
-//                 const baseColor = [200, 200, 200]; 
-//                 const glowColor = [87, 132, 230]; 
-
-//                 const alpha = .7 * t * glowStrength;
-//                 const color = `rgba(87, 132, 230, ${alpha})`;
-
-//                 ctx.strokeStyle = color;
-//                 ctx.shadowBlur = 30 * t * glowStrength;
-//                 ctx.shadowColor = color;
-
-//                 ctx.beginPath();
-//                 ctx.moveTo(x - gridSize / 2, y);
-//                 ctx.lineTo(x + gridSize / 2, y);
-//                 ctx.stroke();
-
-//                 ctx.beginPath();
-//                 ctx.moveTo(x, y - gridSize / 2);
-//                 ctx.lineTo(x, y + gridSize / 2);
-//                 ctx.stroke();
-//             }
-//         }
-//     }
-
-//     ctx.shadowBlur = 0;
-//     ctx.shadowColor = 'transparent';
-
-//     requestAnimationFrame(draw);
-// }
-
-
-// draw();
 
 function addError(field, message) {
     const formItem = field.closest('.form__item');
