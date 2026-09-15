@@ -817,7 +817,7 @@ summary {
 }
 .header__menu {
   position: absolute;
-  margin-left: auto;
+  margin-inline: auto;
   left: 0;
   width: 100%;
   display: none;
@@ -832,10 +832,10 @@ summary {
   transform: translateY(-20vh);
 }
 .header__menu.active .header__link {
-  font-size: var(--size-md);
+  font-size: var(--size-xs);
 }
 .header__link {
-  font-size: var(--size-md);
+  font-size: var(--size-xs);
   color: var(--color-white);
   text-align: left;
   display: flex;
