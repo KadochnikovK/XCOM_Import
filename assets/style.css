@@ -1178,6 +1178,9 @@ summary {
     flex-direction: row;
   }
 }
+.list__item--sm {
+  font-size: var(--size-sm);
+}
 .list__item:nth-child(2n) .list__image {
   order: -1;
 }
