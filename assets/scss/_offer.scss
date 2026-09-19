@@ -1,12 +1,20 @@
 .offer {
     height: 100vh;
     // background: var(--gradient-main);
-    background: url(./images/bg-main.png);
+    background: url(./images/bg-main-mobile.png);
     background-size: cover;
-  
+
     background-position: center;
     background-repeat: no-repeat;
     font-weight: 800;
+
+    @include md {
+        background: url(./images/bg-main.png);
+        background-size: cover;
+
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
     * {
         font-weight: 600;
@@ -20,20 +28,27 @@
         height: 100%;
         position: absolute;
 
+
         &.active {
             opacity: 0;
             visibility: hidden;
         }
     }
-    
-    &__headline  {
+
+    &__headline {
         text-transform: uppercase;
         font-size: var(--size-xxl);
     }
 
     &__text {
-        font-size: var(--size-xs);
+        font-size: var(--size-lg);
         font-weight: 400;
+
+
+        @include md {
+            font-size: var(--size-md);
+            max-width: 50%;
+        }
     }
 
 }

@@ -17,28 +17,40 @@ $xs: 320px;
     --color-white: #fff;
     --color-black: #000000;
 
-    --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);;
+    --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
+    ;
     --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
     --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-    
 
 
 
 
 
 
-    --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
 
-    --size-xxxxs: calc(var(--size-base) * 0.2);
-    --size-xxxs: calc(var(--size-base) * 0.4);
-    --size-xxs: calc(var(--size-base) * 0.6);
-    --size-xs: calc(var(--size-base) * 0.8);
-    --size-sm: calc(var(--size-base) * 1);
-    --size-md: calc(var(--size-base) * 1.2);
-    --size-lg: calc(var(--size-base) * 1.5);
-    --size-xl: calc(var(--size-base) * 2);
-    --size-xxl: calc(var(--size-base) * 2.5);
-    --size-xxxl: calc(var(--size-base) * 5);
+    // --size-base: clamp(14px, calc((100vw + 100vh) * 0.01), 30px);
+
+    // --size-xxxxs: calc(var(--size-base) * 0.4);
+    // --size-xxxs: calc(var(--size-base) * 0.6);
+    // --size-xxs: calc(var(--size-base) * 0.8);
+    // --size-xs: calc(var(--size-base) * 1);
+    // --size-sm: calc(var(--size-base) * 1.2);
+    // --size-md: calc(var(--size-base) * 1.4);
+    // --size-lg: calc(var(--size-base) * 1.6);
+    // --size-xl: calc(var(--size-base) * 2);
+    // --size-xxl: calc(var(--size-base) * 2.5);
+    // --size-xxxl: calc(var(--size-base) * 5);
+
+    --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+    --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+    --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+    --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+    --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+    --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+    --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+    --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+    --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+    --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
 
     --radius-lg: 24px;
     --radius-sm: 10px;

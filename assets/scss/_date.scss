@@ -11,6 +11,8 @@
         flex-wrap: nowrap;
         white-space: nowrap;
         font-size: var(--size-lg);
+        justify-content: center;
+        align-items: center;
 
         &:nth-child(1) {
             padding-left: 0;
@@ -22,6 +24,10 @@
 
         img {
             width: 40px;
+        }
+
+        @include md {
+            font-size: var(--size-xl);
         }
     }
 

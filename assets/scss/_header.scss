@@ -7,13 +7,19 @@
     transition: all 0.3s ease;
     color: var(--color-white);
 
-    padding-top: var(--size-xxxl);
+    padding-top: var(--size---size-sm);
     padding-bottom: var(--size-sm);
 
     // @include md {
     //     padding-top: initial;
     //     padding-bottom: initial;
     // }
+
+
+    @include md {
+
+        padding-top: var(--size-xxxl);
+    }
 
     * {
         font-weight: 600;

@@ -12,17 +12,16 @@
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -219,6 +218,7 @@ a {
   width: 100%;
   height: 40vh;
   min-height: 250px;
+  transform: translateY(-1px);
 }
 
 .swiper {
@@ -490,17 +490,16 @@ summary {
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -597,10 +596,10 @@ summary {
   overflow: hidden;
   color: var(--color-white);
   background: var(--gradient-second);
-  font-size: var(--size-xs);
+  font-size: var(--size-sm);
   cursor: pointer;
   padding: var(--size-sm) var(--size-sm);
-  padding-block: var(--size-lg);
+  padding-block: var(--size-xl);
   width: 100%;
   border-radius: var(--radius-sm);
   min-width: 150px;
@@ -716,17 +715,16 @@ summary {
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -773,17 +771,16 @@ summary {
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -805,6 +802,8 @@ summary {
   flex-wrap: nowrap;
   white-space: nowrap;
   font-size: var(--size-lg);
+  justify-content: center;
+  align-items: center;
 }
 .date__item:nth-child(1) {
   padding-left: 0;
@@ -815,6 +814,11 @@ summary {
 .date__item img {
   width: 40px;
 }
+@media (min-width: 920px) {
+  .date__item {
+    font-size: var(--size-xl);
+  }
+}
 
 .header {
   position: absolute;
@@ -824,8 +828,13 @@ summary {
   z-index: 9;
   transition: all 0.3s ease;
   color: var(--color-white);
-  padding-top: var(--size-xxxl);
+  padding-top: var(--size---size-sm);
   padding-bottom: var(--size-sm);
+}
+@media (min-width: 920px) {
+  .header {
+    padding-top: var(--size-xxxl);
+  }
 }
 .header * {
   font-weight: 600;
@@ -1200,7 +1209,7 @@ summary {
     width: 100%;
     height: 3px !important;
     min-height: 3px;
-    margin-top: calc(var(--size-xxxl) / 1.5);
+    margin-top: calc(var(--size-xxxl));
     background-color: var(--color-blue-main);
   }
   .list__item--arrow::after {
@@ -1253,7 +1262,7 @@ summary {
   align-items: center;
   justify-content: center;
   margin-inline: auto;
-  font-size: var(--size-xxxl) !important;
+  font-size: calc(var(--size-xxxl) * 1.5) !important;
   aspect-ratio: 1;
   color: var(--color-blue-main);
   font-weight: 400;
@@ -1280,11 +1289,19 @@ summary {
 
 .offer {
   height: 100vh;
-  background: url(./images/bg-main.png);
+  background: url(./images/bg-main-mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-weight: 800;
+}
+@media (min-width: 920px) {
+  .offer {
+    background: url(./images/bg-main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .offer * {
   font-weight: 600;
@@ -1305,8 +1322,14 @@ summary {
   font-size: var(--size-xxl);
 }
 .offer__text {
-  font-size: var(--size-xs);
+  font-size: var(--size-lg);
   font-weight: 400;
+}
+@media (min-width: 920px) {
+  .offer__text {
+    font-size: var(--size-md);
+    max-width: 50%;
+  }
 }
 
 .description__text {
@@ -1385,12 +1408,12 @@ summary {
 }
 .topics__name {
   color: var(--color-main);
-  font-size: var(--size-xxs);
+  font-size: var(--size-xs);
   font-weight: 700;
 }
 .topics__text {
   margin-top: auto;
-  font-size: var(--size-xxs);
+  font-size: var(--size-xs);
 }
 .topics__image {
   width: 50%;
@@ -1433,17 +1456,16 @@ summary {
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -1541,7 +1563,7 @@ summary {
   line-height: 1;
 }
 .partners__description {
-  font-size: var(--size-xxs);
+  font-size: var(--size-xs);
   margin-top: auto;
 }
 .partners__photo {
@@ -1667,17 +1689,16 @@ summary {
   --gradient-main: linear-gradient(106.84deg, #000B30 19.77%, #103F77 100%);
   --gradient-second: linear-gradient(90deg, #195EE7 0%, #234C9D 100%);
   --gradient-third: linear-gradient(90deg, #595959 0%, #1A2843 100%);
-  --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.007);
-  --size-xxxxs: calc(var(--size-base) * 0.2);
-  --size-xxxs: calc(var(--size-base) * 0.4);
-  --size-xxs: calc(var(--size-base) * 0.6);
-  --size-xs: calc(var(--size-base) * 0.8);
-  --size-sm: calc(var(--size-base) * 1);
-  --size-md: calc(var(--size-base) * 1.2);
-  --size-lg: calc(var(--size-base) * 1.5);
-  --size-xl: calc(var(--size-base) * 2);
-  --size-xxl: calc(var(--size-base) * 2.5);
-  --size-xxxl: calc(var(--size-base) * 5);
+  --size-xxxxs: clamp(10px, 0.45vw + 0.15vh, 12px);
+  --size-xxxs: clamp(12px, 0.55vw + 0.2vh, 14px);
+  --size-xxs: clamp(14px, 0.65vw + 0.25vh, 16px);
+  --size-xs: clamp(16px, 0.75vw + 0.3vh, 18px);
+  --size-sm: clamp(18px, 0.85vw + 0.35vh, 21px);
+  --size-md: clamp(21px, 1vw + 0.4vh, 25px);
+  --size-lg: clamp(25px, 1.2vw + 0.5vh, 32px);
+  --size-xl: clamp(32px, 1.5vw + 0.6vh, 42px);
+  --size-xxl: clamp(42px, 2vw + 0.8vh, 64px);
+  --size-xxxl: clamp(48px, 3.5vw + 1vh, 72px);
   --radius-lg: 24px;
   --radius-sm: 10px;
   --lh-xl: 1.6;
@@ -1812,4 +1833,4 @@ summary {
   position: absolute;
   width: 1px;
   background-color: var(--color-grey);
-}
+}/*# sourceMappingURL=style.css.map */

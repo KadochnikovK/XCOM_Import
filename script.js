@@ -9,127 +9,57 @@ const topicsSwiper = new Swiper(".topics__slider", {
         disableOnInteraction: false,
     },
 
-    // simulateTouch: true,
-    // grabCursor: true,
-
-    // touchRatio: 0.6,
-    // touchAngle: 45,
-
-    // freeMode: {
-    //     enabled: true,
-    //     momentum: true,
-    //     momentumRatio: 2,
-    //     momentumBounce: true,
-    //     momentumBounceRatio: 1,
-    //     momentumVelocityRatio: 2,
-    //     sticky: true,
-    // },
-
-    // speed: 600,
-    // resistanceRatio: 0.6,
+    speed: 600,
 
     breakpoints: {
         320: {
             slidesPerView: 1.05,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 3,
-            //     sticky: true,
-            // },
-            // speed: 800,
+
         },
         640: {
             slidesPerView: 2,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
+
         },
         1000: {
             slidesPerView: 3,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
+
         },
         1300: {
             slidesPerView: 4,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
+
         },
         1500: {
             slidesPerView: 5,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
+
         },
     },
 });
 
 const footerSwiper = new Swiper(".footer__slider", {
-    // slidesPerView: "auto",
+
     spaceBetween: 20,
-    // centeredSlides: false,
-    // loop: true,
+
 
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
 
-    // simulateTouch: true,
-    // grabCursor: true,
-
     touchRatio: 0.6,
     touchAngle: 45,
-
-    // freeMode: {
-    //     enabled: true,
-    //     momentum: true,
-    //     momentumRatio: 2,
-    //     momentumBounce: true,
-    //     momentumBounceRatio: 1,
-    //     momentumVelocityRatio: 2,
-    //     sticky: true,
-    // },
-
     speed: 600,
-    // resistanceRatio: 0.6,
+
 
     breakpoints: {
         320: {
             slidesPerView: 1,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 3,
-            //     sticky: true,
-            // },
-            speed: 800,
         },
         640: {
             slidesPerView: 2,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
+
         },
         1000: {
             slidesPerView: 3,
-            // freeMode: {
-            //     enabled: true,
-            //     momentum: true,
-            //     momentumRatio: 2,
-            // },
         },
     },
 });
@@ -212,37 +142,30 @@ const infopartners = new Swiper(".infopartners-swiper", {
 
 const speakers = new Swiper(".speakers-swiper", {
     spaceBetween: 20,
-    breakpoints: {
 
+    breakpoints: {
         320: {
             slidesPerView: 1,
-
+            slidesPerGroup: 1,
         },
-
 
         920: {
             slidesPerView: 2,
-
+            slidesPerGroup: 2,
         },
     },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //     hide: true,
-    // },
-    // freeMode: {
-    //     enabled: true,
-    //     sticky: false,
-    // },
+
     loop: true,
+
     autoplay: {
         delay: 10000,
         disableOnInteraction: false,
     },
+
     pagination: {
         el: ".speakers-swiper .swiper-pagination",
         clickable: true,
     },
-
 });
 
 
@@ -253,22 +176,19 @@ const photos = new Swiper(".photos-swiper", {
         320: {
             slidesPerView: 1,
 
+            slidesPerGroup: 1,
+
         },
 
 
         920: {
             slidesPerView: 2,
 
+            slidesPerGroup: 2,
+
         },
     },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //     hide: true,
-    // },
-    // freeMode: {
-    //     enabled: true,
-    //     sticky: false,
-    // },
+
     loop: true,
     autoplay: {
         delay: 10000,
@@ -282,62 +202,6 @@ const photos = new Swiper(".photos-swiper", {
 });
 
 
-// const moreSwiper2 = new Swiper(".more__swiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 20,
-//     loop: true,
-//     speed: 600,
-
-//     effect: 'slide',
-
-//     simulateTouch: true,
-//     grabCursor: true,
-//     touchRatio: 1,
-//     touchAngle: 45,
-//     allowTouchMove: true,
-
-
-//     resistance: true,
-//     resistanceRatio: 0.6,
-
-//     autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: true,
-//     },
-//     navigation: {
-//         nextEl: '.more__swiper .button--next',
-//         prevEl: '.more__swiper .button--prev',
-//     },
-
-
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 1,
-//             spaceBetween: 20,
-
-//         },
-//         768: {
-//             slidesPerView: 1,
-//             spaceBetween: 20,
-
-//         },
-//         1024: {
-//             slidesPerView: 1,
-//             spaceBetween: 20,
-
-//         }
-//     },
-
-
-//     on: {
-//         init: function () {
-//             console.log("topics slider initialized");
-//         },
-//         slideChange: function () {
-//             console.log("topics slider changed to slide:", this.realIndex);
-//         }
-//     }
-// });
 
 const moreSlider2Element = document.querySelector('.more__swiper');
 if (moreSlider2Element) {
