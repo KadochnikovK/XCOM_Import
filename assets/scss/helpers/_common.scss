@@ -65,16 +65,18 @@ a {
     height: 60px;
     margin: 40px 0;
     transform: translateX(9px);
+    right: 0;
+    left: calc(100% - 64px);
 
     &::before,
     &::after {
         content: "";
-        left: 0;
+        // left: 0;
         position: absolute;
         width: 44px;
         height: 44px;
-        border-right: 4px solid transparent;
-        border-bottom: 4px solid transparent;
+        border-right:2px solid transparent;
+        border-bottom: 2px solid transparent;
         animation: gradientAnimation 2s infinite alternate;
     }
 
@@ -96,11 +98,13 @@ a {
 
 @keyframes gradientAnimation {
     0% {
-        border-color: #0b1957;
+        // border-color: #0b1957;
+        border-color: #fff;
     }
 
     100% {
-        border-color: #5784e6;
+        // border-color: #5784e6;
+        border-color: #fff;
     }
 }
 

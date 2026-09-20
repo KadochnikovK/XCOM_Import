@@ -6,10 +6,13 @@
 
     &__text {
         font-size: var(--size-xs);
-      
 
-        @media(min-width: $sm) {
+        width: calc(100% - 100px);
+
+
+        @media(min-width: $md) {
             font-size: var(--size-xs);
+            width: 100%;
         }
     }
 

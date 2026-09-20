@@ -93,6 +93,9 @@
     </section>
     <section class="container description">
       <div class="content description__content">
+        <div class="mobile-only">
+          <div class="double-arrow" style="transform: translateY(230%) scale(.8); "></div>
+        </div>
         <h2 class="headline">Для кого мероприятие</h2>
         <p class="description__text">
           <b>«Импортозамещение 2026»</b> — конференция о современных российских ИТ-решениях, технологиях и практических
@@ -479,17 +482,17 @@
 
             function init() {
               var myMap = new ymaps.Map("map", {
-               
+
                 center: [55.783713, 37.564379],
                 zoom: 16,
                 controls: ["zoomControl", "fullscreenControl"],
               });
 
               var myPlacemark = new ymaps.Placemark(
-               
+
                 [55.783713, 37.564379],
                 {
-            
+
                   balloonContent: "Беговая ул., стр. 34<br>г. Москва, 125284",
                 },
                 {
