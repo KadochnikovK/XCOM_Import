@@ -473,22 +473,24 @@
         <div class="list__content">
           <div id="map" class="map" style="border-radius: 10px; overflow: hidden"></div>
 
-          <script src="https://api-maps.yandex.ru/2.1/?apikey={здесь нужен токен}
-                        &lang=ru_RU"></script>
+          <script src="https://api-maps.yandex.ru/2.1/?apikey={здесь нужен токен}&lang=ru_RU"></script>
           <script>
             ymaps.ready(init);
 
             function init() {
               var myMap = new ymaps.Map("map", {
-                center: [55.710446, 37.653576],
+               
+                center: [55.783713, 37.564379],
                 zoom: 16,
                 controls: ["zoomControl", "fullscreenControl"],
               });
 
               var myPlacemark = new ymaps.Placemark(
-                [55.710446, 37.653576],
+               
+                [55.783713, 37.564379],
                 {
-                  balloonContent: "Loft Hall<br>ул. Ленинская Слобода, 26, стр. 11",
+            
+                  balloonContent: "Беговая ул., стр. 34<br>г. Москва, 125284",
                 },
                 {
                   preset: "islands#redDotIcon",
