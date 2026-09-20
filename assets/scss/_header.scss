@@ -57,7 +57,7 @@
             transform: translateY(-20vh);
 
             .header__link {
-                font-size: var(--size-xs);
+                font-size: var(--size-md);
             }
         }
     }
@@ -109,7 +109,7 @@
         transition: transform 0.2s ease;
 
         &:hover {
-            transform: scale(1.05);
+            // transform: scale(1.05);
         }
     }
 

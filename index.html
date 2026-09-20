@@ -14,7 +14,9 @@
   <link type="Image/x-icon" href="./assets/images/favicon.png" rel="icon" />
 
   <script src="./assets/plugins/swiper/swiper.js"></script>
-  <script src="./script.js" defer></script>
+  <script src="./assets/js/menu.js" defer></script>
+  <script src="./assets/js/modal.js" defer></script>
+  <script src="./assets/js/slider.js" defer></script>
   <title>Импортозамещение 2026: Ключевая площадка для диалога бизнеса, IT-индустрии о будущем импортозамещаемых
     технологий</title>
 </head>
@@ -402,51 +404,60 @@
     </section>
 
     <a id="registration"></a>
-    <section class="container" style="padding-bottom: 0">
+    <section class="container">
       <div class="content">
         <form class="form" id="main-form" action="#">
           <div class="headgroup">
-            <!-- <div class="headgroup__label">Регистрация</div> -->
+            <div class="headgroup__label margin-bottom-xl">Регистрация</div>
           </div>
-          <div class="form__inputs">
-            <div class="form__item">
-              <label for="name" class="form__label">Имя</label>
-              <input type="text" class="form__input" placeholder=" " name="name" />
+          <div class="form__wrapper">
+            <div class="form__inputs">
+              <div class="form__item">
+                <label for="name" class="form__label">Имя</label>
+                <input type="text" class="form__input" placeholder="" name="name" required />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="surname" class="form__label">Фамилия</label>
+                <input type="text" class="form__input" placeholder="" name="surname" required />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label">Почта</label>
+                <input type="email" class="form__input" placeholder="" name="email" required />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="phone" class="form__label">Телефон</label>
+                <input type="tel" class="form__input" placeholder="" name="phone" required />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="company" class="form__label">Название организации</label>
+                <input type="text" class="form__input" placeholder="" name="company" />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="job" class="form__label">Должность</label>
+                <input type="text" class="form__input" placeholder="" name="position" />
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <div class="form__item">
+                <label for="taxId" class="form__label">ИНН</label>
+                <input type="number" class="form__input" placeholder="" name="taxId" />
+                <div class="error-message" style="display: none"></div>
+              </div>
             </div>
-            <div class="form__item">
-              <label for="surname" class="form__label">Фамилия</label>
-              <input type="text" class="form__input" placeholder=" " name="surname" />
+            <div class="form__item form__item--checkbox">
+              <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" required />
+              <label for="privacy-policy" class="form__checkbox-label">Я согласен на обработку <a href="#"
+                  style="font-weight: 700">персональных данных</a></label>
+              <div class="error-message" style="display: none"></div>
             </div>
-            <div class="form__item">
-              <label for="email" class="form__label">Почта</label>
-              <input type="email" class="form__input" placeholder=" " name="email" />
-            </div>
-            <div class="form__item">
-              <label for="phone" class="form__label">Телефон</label>
-              <input type="tel" class="form__input" placeholder=" " name="phone" />
-            </div>
-            <div class="form__item">
-              <label for="company" class="form__label">Название организации</label>
-              <input type="text" class="form__input" placeholder=" " name="company" />
-            </div>
-            <div class="form__item">
-              <label for="job" class="form__label">Должность</label>
-              <input type="text" class="form__input" placeholder=" " name="job" />
-            </div>
-            <div class="form__item">
-              <label for="taxId" class="form__label">ИНН</label>
-              <input type="number" class="form__input" placeholder=" " name="taxId" />
-            </div>
+            <button type="submit" class="button" style="margin-top: var(--size-sm)">
+              <span class="button__text">Принять участие</span>
+            </button>
           </div>
-          <div class="form__item form__item--checkbox">
-            <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" required />
-            <label for="privacy-policy" class="form__checkbox-label">Я согласен на обработку <a href="#"
-                style="font-weight: 700">персональных данных</a></label>
-            <div class="error-message" style="display: none"></div>
-          </div>
-          <button type="submit" class="button" style="max-width: 500px; width: 100%">
-            <div class="button__text">Принять участие</div>
-          </button>
         </form>
       </div>
     </section>
@@ -631,6 +642,19 @@
       </div>
     </div>
   </footer>
+  <div class="modal animate__animated" style="display: none">
+    <div class="modal__window animate__animated">
+      <div class="modal__close">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <p class="modal__headline"></p>
+        <p class="modal__text"></p>
+        <a class="modal__button button"> </a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
