@@ -244,7 +244,9 @@
         margin-inline: auto;
 
         font-size: calc(var(--size-xxxl) * 1.5) !important;
-        aspect-ratio: 1;
+        width: calc(var(--size-xxxl) * 2.5);
+        height: calc(var(--size-xxxl) * 2.5);
+     
         color: var(--color-blue-main);
         font-weight: 400;
     }
